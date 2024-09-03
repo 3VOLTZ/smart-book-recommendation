@@ -100,15 +100,15 @@ root.config(bg="#F8E1E1")
 root.resizable(False, False)
 
 # icon
-icon_image = PhotoImage(file="D:\\pyproject\\book_recommendation_system\\Images\\icon.png")
+icon_image = PhotoImage(file="E:\\book_recommendation_system\\Images\\icon.png")
 root.iconphoto(False, icon_image)
 
 # background image
-heading_image = PhotoImage(file="D:\\pyproject\\book_recommendation_system\\Images\\background.png")
+heading_image = PhotoImage(file="E:\\book_recommendation_system\\Images\\background.png")
 Label(root, image=heading_image, bg="#111119").place(x=-2, y=-2)
 
 # logo
-logo_image = PhotoImage(file="D:\\pyproject\\book_recommendation_system\\Images\\logo.png")
+logo_image = PhotoImage(file="E:\\book_recommendation_system\\Images\\logo.png")
 Label(root, image=logo_image, bg="#F8E1E1").place(x=300, y=80)
 
 # heading
@@ -116,7 +116,7 @@ heading = Label(root, text="Book Recommendation System", font=("Elephant", 30, "
 heading.place(x=410, y=90)
 
 # search box background image
-search_box = PhotoImage(file="D:\\pyproject\\book_recommendation_system\\Images\\Rectangle 2.png")
+search_box = PhotoImage(file="E:\\book_recommendation_system\\Images\\Rectangle 2.png")
 Label(root, image=search_box, bg="#0099ff").place(x=400, y=155)
 
 # search box
@@ -125,17 +125,17 @@ search_entry = Entry(root, textvariable=Search, width=20, font=("Lato", 25), bg=
 search_entry.place(x=512, y=172)
 
 # search button
-recommend_button_image = PhotoImage(file="D:\\pyproject\\book_recommendation_system\\Images\\Search.png")
+recommend_button_image = PhotoImage(file="E:\\book_recommendation_system\\Images\\Search.png")
 recommend_button = Button(root, image=recommend_button_image, bg="#0099ff", bd=0, activebackground="#252532", cursor="hand2", command=search)
 recommend_button.place(x=860, y=169)
 
 # refresh button
-Refresh_image = PhotoImage(file="D:\\pyproject\\book_recommendation_system\\Images\\refresh.png")
+Refresh_image = PhotoImage(file="E:\\book_recommendation_system\\Images\\refresh.png")
 refresh = Button(root, image=Refresh_image, bd=0, cursor="hand2", activebackground="#F8E1E1", bg="#0099ff", command=refresh_books)
 refresh.place(x=350, y=175)
 
 # setting button
-Setting_image = PhotoImage(file="D:\\pyproject\\book_recommendation_system\\Images\\setting.png")
+Setting_image = PhotoImage(file="E:\\book_recommendation_system\\Images\\setting.png")
 setting = Button(root, image=Setting_image, bd=0, cursor="hand2", activebackground="#F8E1E1", bg="#0099ff")
 setting.place(x=1000, y=175)
 setting.bind('<Button-1>', show_menu)
@@ -149,7 +149,7 @@ check_var2 = BooleanVar()
 menu.add_checkbutton(label="Ratings", variable=check_var2, command=lambda: print(f"check Option is {'checked' if check_var2.get() else 'unchecked'}"))
 
 # logout button
-Logout_image = PhotoImage(file="D:\\pyproject\\book_recommendation_system\\Images\\logout.png")
+Logout_image = PhotoImage(file="E:\\book_recommendation_system\\Images\\logout.png")
 Button(root, image=Logout_image, bd=0, cursor="hand2", activebackground="#0099ff", bg="white", command=logout).place(x=1200, y=650)
 
 # frames for book information
